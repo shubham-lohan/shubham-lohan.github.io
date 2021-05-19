@@ -31,10 +31,12 @@
   <!--Landing div-->
   <div class="landing">
     <!--Make sure that the image u add here is a square image and for best performance compress the image -->
-    <div class="img animate__animated animate__slideInDown wow" data-wow-duration="1.5s" data-wow-delay="0.3s"><img
-        src="assets/img/me.jpg" alt="name photo"></div>
-    <div class="me animate__animated animate__slideInUp wow" data-wow-duration="1.5s" data-wow-delay="0.3s">
+    <!-- <div class="img animate__animated animate__slideInDown wow" data-wow-duration="1.5s" data-wow-delay="0.3s"><img
+        src="assets/img/me.jpg" alt="name photo"></div> -->
+    <div class="me animate__animated animate__zoomIn wow" data-wow-duration="1.5s" data-wow-delay="0.3s">
       <!--Enter your name here-->
+      <div class="img animate__animated animate__zoomIn wow" data-wow-duration="1.5s" data-wow-delay="0.3s"><img
+          src="assets/img/me.jpg" alt="name photo"></div>
       <section class="shortme">
         <h2>Shubham Lohan</h2>
       </section>
@@ -55,9 +57,11 @@
               rel="noopener noreferrer" download
               style="color: white; outline: none; text-decoration: none;">Resume</a></button></div>
       </div>
-      <div class="box box2 animate__animated animate__slideInUp wow" data-wow-duration="1s" data-wow-delay="0.37s">
+      <div class="box box2 animate__animated animate__slideInRight wow" data-wow-duration="1s" data-wow-delay="0.37s">
         <span><b>Skills</b></span>
-        <br> <span> Programming</span>
+        <br><br>
+        <span> Programming</span>
+        <br>
         <ul class="mainlist">
           <!--U can use Fontawsome icons here-->
           <ul class="sublist">
@@ -77,7 +81,9 @@
             <li>Java</li>
           </ul>
         </ul>
+        <br><br>
         <span style="width: 100%; text-align: center;">Tools</span>
+        <br>
         <ul class="mainlist">
           <ul class="sublist">
             <li class="icon"><img src="https://img.icons8.com/fluent/48/000000/github.png" alt="github" /></li>
@@ -91,7 +97,8 @@
           </ul>
           <ul class="sublist">
             <li class="icon"><img src="https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png"
-                alt="vscode" /></li>
+                alt="vscode" />
+            </li>
             <li>VS Code</li>
           </ul>
           <ul class="sublist">
@@ -100,47 +107,76 @@
           </ul>
         </ul>
       </div>
-      <div class="box box3 animate__animated animate__slideInRight wow" data-wow-duration="1s" data-wow-delay="0.75s">
+
+
+      <div class="box box2 animate__animated animate__slideInLeft wow" data-wow-duration="1s" data-wow-delay="0.37s">
+        <span>Projects</span>
+        <ul class="mainlist">
+          <ul class="sublist">
+            <span style="color: #da4518;">
+              <li>Mafia</li>
+              <li class="icon"><a href="https://github.com/shubham-lohan/Mafia-Game" rel=“noreferrer”
+                  target="_blank"><img src="assets/img/mafia.jpeg" alt="Mafia Game" class="project" /></a></li>
+              Commmand line implementation of Mafia game using Java
+            </span>
+          </ul>
+          <ul class="sublist">
+            <span style="color: #da4518;">
+              <li>Zotato</li>
+              <li class="icon"><a href="https://github.com/shubham-lohan/Zotato" rel=“noreferrer” target="_blank"><img
+                    src="assets/img/zotato.jpeg" alt="Zotato" class="project" /></a></li>
+              Commmand line based implementation of Zomato using Java
+            </span>
+          </ul>
+          <ul class="sublist">
+            <span style="color: #da4518;">
+              <li>Color-Switch</li>
+              <li class="icon"><a href="https://github.com/shubham-lohan/Color-Switch" rel=“noreferrer”
+                  target="_blank"><img src="assets/img/colorswitch.png" alt="Zotato" class="project" /></a></li>
+              GUI implementation of android game ColorSwitch using JavaFx
+            </span>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="box box3 animate__animated animate__slideInUp wow" data-wow-duration="1s" data-wow-delay="0.75s">
         <span>Connect</span>
-        <ul>
-          <!--Enter your profile links here-->
+        <ul class="mainlist">
           <li><a href="https://github.com/shubham-lohan" target="_blank" rel="noopener noreferrer"><i
                 class="fab fa-github"></i></a></li>
           <li><a href="https://www.linkedin.com/in/shubham-lohan" target="_blank" rel="noopener noreferrer"><i
                 class="fab fa-linkedin-in"></i></a></li>
           <li><a rel=" noreferrer" href="mailto:shubhamlohan99@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
           </li>
-          <!-- <li><a href="https://twitter.com/Shubham_Lohan_/" target="_blank" rel="noopener noreferrer"><i
-                class="fab fa-twitter"></i></a></li> -->
           <li> <a rel=“noreferrer” href="https://t.me/shubham_lohan" target="_blank"><i class="fab fa-telegram"></i></a>
           </li>
-
         </ul>
       </div>
     </div>
+  </div>
 
 
 
-    <!--TypedJs -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script>
-      //Enter your specilizations here
-      var typed = new Typed("#typed", {
-        strings: ['Programmer', 'Engineer', 'Gamer'],
-        typeSpeed: 40,
-        smartBackspace: true,
-        backSpeed: 30,
-        loop: true,
-        showCursor: false,
-      });
-    </script>
-    <!--Wow js is for aniamtion on scroll-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-      crossorigin="anonymous"></script>
-    <script>
-      new WOW().init();
-    </script>
+  <!--TypedJs -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script>
+    //Enter your specilizations here
+    var typed = new Typed("#typed", {
+      strings: ['Programmer', 'Engineer', 'Gamer'],
+      typeSpeed: 40,
+      smartBackspace: true,
+      backSpeed: 30,
+      loop: true,
+      showCursor: false,
+    });
+  </script>
+  <!--Wow js is for aniamtion on scroll-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

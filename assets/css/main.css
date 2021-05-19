@@ -381,3 +381,13 @@ body {
   margin-bottom: -50px;
 }
 /*# sourceMappingURL=main.css.map */
+
+.box2 .project {
+  width: 25vh;
+  height: 25vh;
+  margin: 0 auto;
+  border-radius: 30%;
+  box-shadow: -10px -10px 20px #b8b7b7, 10px 10px 20px #0000004b;
+  background: #000;
+  padding: 0.25em;
+}

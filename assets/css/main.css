@@ -135,7 +135,7 @@ body {
 }
 
 .landing .me {
-  min-width: 35vh;
+  min-width: 45vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,7 +153,7 @@ body {
           flex-direction: column;
   padding: 3vh 2vh 3vh 2vh;
   min-height: 20vh;
-  border-radius: 1em;
+  border-radius: 10%;
   -webkit-box-shadow: 5px 5px 30px #f53f2b,  inset -5px -5px 10px #0000000c, -5px -5px 30px #ffffffbb,  inset -5px -5px 10px #0000000c;
           box-shadow: 5px 5px 30px #f53f2b,  inset -5px -5px 10px #0000000c, -5px -5px 30px #ffffffbb,  inset -5px -5px 10px #0000000c;
 }
@@ -246,7 +246,7 @@ body {
   padding: 0.8em 1.8em;
   outline: none;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 10px;
   border: none;
   background: #f53f2b;
   color: #fcfcfc;
@@ -290,7 +290,15 @@ body {
   margin-bottom: 1em;
   font-weight: bold;
 }
-
+.about .card-wrapper .box2 p {
+  color: #da4518; 
+  font-style: italic;
+}
+.about .card-wrapper .box2 li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
 .about .card-wrapper .box2 .mainlist {
   width: 100%;
   display: -webkit-box;
@@ -387,7 +395,8 @@ body {
   height: 25vh;
   margin: 0 auto;
   border-radius: 30%;
-  box-shadow: -10px -10px 20px #b8b7b7, 10px 10px 20px #0000004b;
+  -webkit-box-shadow: -5px -5px 10px #f53f2b, 10px 10px 20px #0000004b;
+  box-shadow: -5px -5px 10px #f53f2b, 10px 10px 20px #0000004b;
   background: #000;
   padding: 0.25em;
 }

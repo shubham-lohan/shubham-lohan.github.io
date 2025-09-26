@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="https://kit.fontawesome.com/4019246ab4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
     <title>Shubham Lohan | Portfolio</title>
 
     <!-- Open Graph (OG) Tags -->
@@ -50,7 +54,6 @@
             <div class="profile-card glass-card animate__animated animate__fadeInUp">
                 <div class="profile-image">
                     <img src="assets/img/me.png" alt="Shubham Lohan">
-                    <div class="status-indicator"></div>
                 </div>
                 <h1>Shubham Lohan</h1>
                 <div class="typing-text">
@@ -69,239 +72,268 @@
             <div class="scroll-arrow"></div>
         </div>
     </section>
-<!-- About Section -->
-<section id="about" class="about-section">
-    <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-grid">
-            <div class="about-card glass-card animate__animated animate__fadeInLeft">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-card glass-card animate__animated animate__fadeInLeft"
+                style="width: 100%; max-width: none;">
                 <div class="card-header">
                     <img src="assets/img/aboutme.png" alt="About Me" class="card-icon">
                     <h3>Who Am I</h3>
                 </div>
-                    <p>I am a CSAM (Computer Science and Applied Mathematics) student at IIIT Delhi with a passion for solving complex
-                        problems. I thrive in challenging environments and enjoy applying my technical skills to find innovative solutions.
-                    </p>
+                <p>Software Development Engineer with 2 years of experience in building and scaling backend systems at
+                    fast-paced startups like Blinkit and Urban Company. Skilled in Java, Spring Boot, Node.js,
+                    TypeScript, MySQL, and MongoDB, with a strong foundation in data structures, algorithms, and system
+                    design. Experienced in developing high-impact features such as product integrity systems, catalog
+                    dashboards, and job optimization algorithms. Recognized for adaptability, problem-solving, and
+                    delivering robust solutions in dynamic environments.
+                </p>
+            </div>
+
+            <!-- Experience Timeline -->
+            <div class="experience-timeline glass-card animate__animated animate__fadeInUp">
+                <div class="card-header">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Experience Timeline</h3>
                 </div>
-                
-                <div class="stats-card glass-card animate__animated animate__fadeInRight">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Projects</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Years Coding</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Technologies</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">∞</span>
-                            <span class="stat-label">Learning</span>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-                </section>
-                
-                <!-- Skills Section -->
-                <section id="skills" class="skills-section">
-                    <div class="container">
-                        <h2 class="section-title">Skills & Technologies</h2>
-                        <div class="skills-grid">
-                            <!-- Programming Languages -->
-                            <div class="skill-category glass-card animate__animated animate__fadeInUp">
-                                <div class="category-header">
-                                    <i class="fas fa-code"></i>
-                                    <h3>Programming</h3>
-                                </div>
-                                <div class="skills-list">
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C">
-                                        <span>C</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++">
-                                        <span>C++</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
-                                        <span>Python</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java">
-                                        <span>Java</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/color/48/000000/typescript.png" alt="TypeScript">
-                                        <span>TypeScript</span>
-                                    </div>
-                                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <p class="timeline-company">Blinkit (Eternal)</p>
+                                <div class="timeline-date">Mar 2025 - Present</div>
                             </div>
-                
-                            <!-- Web Technologies -->
-                            <div class="skill-category glass-card animate__animated animate__fadeInUp">
-                                <div class="category-header">
-                                    <i class="fas fa-globe"></i>
-                                    <h3>Web Technologies</h3>
-                                </div>
-                                <div class="skills-list">
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML">
-                                        <span>HTML</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
-                                        <span>CSS</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/fluent/48/000000/mysql-logo.png" alt="MySQL">
-                                        <span>MySQL</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/color/48/000000/django.png" alt="Django">
-                                        <span>Django</span>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <!-- Tools -->
-                            <div class="skill-category glass-card animate__animated animate__fadeInUp">
-                                <div class="category-header">
-                                    <i class="fas fa-tools"></i>
-                                    <h3>Tools & IDEs</h3>
-                                </div>
-                                <div class="skills-list">
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git">
-                                        <span>Git</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub">
-                                        <span>GitHub</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png" alt="VS Code">
-                                        <span>VS Code</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <img src="https://img.icons8.com/color/48/000000/intellij-idea.png" alt="IntelliJ">
-                                        <span>IntelliJ</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <img src="assets/img/icon_CLion.svg" alt="CLion">
-                                        <span>CLion</span>
-                                    </div>
-                                </div>
+                            <h4>Software Developer Engineer - 1</h4>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">SpringBoot</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Kubernetes</span>
                             </div>
                         </div>
                     </div>
-                </section>
-                
-                <!-- Projects Section -->
-                <section id="projects" class="projects-section">
-                    <div class="container">
-                        <h2 class="section-title">Featured Projects</h2>
-                        <div class="projects-grid">
-                            <div class="project-card glass-card animate__animated animate__fadeInUp">
-                                <div class="project-image">
-                                    <img src="assets/img/claim.png" alt="Claps Portal">
-                                    <div class="project-overlay">
-                                        <a href="http://claps.iiitd.edu.in/" target="_blank" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h3>Claps Portal</h3>
-                                    <p>B.Tech Project - Workflow system to manage Institute claim transactions online with Django
-                                        backend.</p>
-                                    <div class="project-tags">
-                                        <span class="tag">Django</span>
-                                        <span class="tag">Python</span>
-                                        <span class="tag">MySQL</span>
-                                    </div>
-                                </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <p class="timeline-company">Urban Company</p>
+                                <div class="timeline-date">July 2023 - Feb 2025</div>
                             </div>
-                
-                            <div class="project-card glass-card animate__animated animate__fadeInUp">
-                                <div class="project-image">
-                                    <img src="assets/img/leetcode.png" alt="LeetCode Visualizer">
-                                    <div class="project-overlay">
-                                        <a href="http://leetcode-visualizer.herokuapp.com/" target="_blank" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h3>LeetCode Visualizer</h3>
-                                    <p>Interactive visualization of LeetCode stats with contest ranking and profile comparison features.
-                                    </p>
-                                    <div class="project-tags">
-                                        <span class="tag">JavaScript</span>
-                                        <span class="tag">Charts.js</span>
-                                        <span class="tag">API</span>
-                                    </div>
-                                </div>
-                                </div>
-                            <div class="project-card glass-card animate__animated animate__fadeInUp">
-                                <div class="project-image">
-                                    <img src="assets/img/election.png" alt="Election Portal">
-                                    <div class="project-overlay">
-                                        <a href="https://github.com/shubham-lohan/online_election_portal" target="_blank" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h3>Online Election Portal</h3>
-                                    <p>Secure online voting platform for mini-world elections with real-time results.</p>
-                                    <div class="project-tags">
-                                        <span class="tag">Web Dev</span>
-                                        <span class="tag">Security</span>
-                                        <span class="tag">Database</span>
-                                    </div>
-                                </div>
+                            <h4>Software Developer Engineer - 1</h4>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">MongoDB</span>
                             </div>
-                            <div class="project-card glass-card animate__animated animate__fadeInUp">
-                                <div class="project-image">
-                                    <img src="assets/img/colorswitch.png" alt="Color Switch">
-                                    <div class="project-overlay">
-                                        <a href="https://github.com/shubham-lohan/Color-Switch" target="_blank" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="project-content">
-                                    <h3>Color Switch Game</h3>
-                                    <p>GUI implementation of popular Color Switch game using JavaFX with smooth animations.</p>
-                                    <div class="project-tags">
-                                        <span class="tag">Java</span>
-                                        <span class="tag">JavaFX</span>
-                                        <span class="tag">Game Dev</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-card glass-card animate__animated animate__fadeInUp">
-                                <div class="project-image">
-                                    <img src="assets/img/linuxshell.jpg" alt="Linux Shell">
-                                    <div class="project-overlay">
-                                        <a href="https://github.com/shubham-lohan/Basic-Linux-Shell" target="_blank" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category glass-card animate__animated animate__fadeInUp">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C">
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++">
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/color/48/000000/typescript.png" alt="TypeScript">
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="skill-category glass-card animate__animated animate__fadeInUp">
+                    <div class="category-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML">
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/fluent/48/000000/mysql-logo.png" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/color/48/000000/django.png" alt="Django">
+                            <span>Django</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category glass-card animate__animated animate__fadeInUp">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & IDEs</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub">
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png"
+                                alt="VS Code">
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://img.icons8.com/color/48/000000/intellij-idea.png" alt="IntelliJ">
+                            <span>IntelliJ</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/img/icon_CLion.svg" alt="CLion">
+                            <span>CLion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card animate__animated animate__fadeInUp">
+                    <div class="project-image">
+                        <img src="assets/img/claim.png" alt="Claps Portal">
+                        <div class="project-overlay">
+                            <a href="http://claps.iiitd.edu.in/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Claps Portal</h3>
+                        <p>B.Tech Project - Workflow system to manage Institute claim transactions online with Django
+                            backend.</p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card animate__animated animate__fadeInUp">
+                    <div class="project-image">
+                        <img src="assets/img/leetcode.png" alt="LeetCode Visualizer">
+                        <div class="project-overlay">
+                            <a href="http://leetcode-visualizer.herokuapp.com/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>LeetCode Visualizer</h3>
+                        <p>Interactive visualization of LeetCode stats with contest ranking and profile comparison
+                            features.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Charts.js</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card animate__animated animate__fadeInUp">
+                    <div class="project-image">
+                        <img src="assets/img/election.png" alt="Election Portal">
+                        <div class="project-overlay">
+                            <a href="https://github.com/shubham-lohan/online_election_portal" target="_blank"
+                                class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Online Election Portal</h3>
+                        <p>Secure online voting platform for mini-world elections with real-time results.</p>
+                        <div class="project-tags">
+                            <span class="tag">Web Dev</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card animate__animated animate__fadeInUp">
+                    <div class="project-image">
+                        <img src="assets/img/colorswitch.png" alt="Color Switch">
+                        <div class="project-overlay">
+                            <a href="https://github.com/shubham-lohan/Color-Switch" target="_blank"
+                                class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Color Switch Game</h3>
+                        <p>GUI implementation of popular Color Switch game using JavaFX with smooth animations.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">JavaFX</span>
+                            <span class="tag">Game Dev</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card animate__animated animate__fadeInUp">
+                    <div class="project-image">
+                        <img src="assets/img/linuxshell.jpg" alt="Linux Shell">
+                        <div class="project-overlay">
+                            <a href="https://github.com/shubham-lohan/Basic-Linux-Shell" target="_blank"
+                                class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <h3>Linux Shell</h3>
-                        <p>Custom implementation of basic Linux shell functionality with command parsing and execution.</p>
+                        <p>Custom implementation of basic Linux shell functionality with command parsing and execution.
+                        </p>
                         <div class="project-tags">
                             <span class="tag">C</span>
                             <span class="tag">Linux</span>
@@ -330,14 +362,8 @@
                     </div>
                 </div>
             </div>
-            <div class="more-projects"></div>
-            <a href="https://github.com/shubham-lohan" target="_blank" class="btn-primary glass-btn">
-                <i class="fab fa-github"></i> View More Projects
-            </a>
-            </div>
-            </div>
     </section>
-    
+
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -345,15 +371,16 @@
             <div class="contact-grid">
                 <div class="contact-info glass-card animate__animated animate__fadeInLeft">
                     <h3>Get In Touch</h3>
-                    <p>I'm always open to discussing new opportunities, innovative projects, and interesting collaborations.
+                    <p>I'm always open to discussing new opportunities, innovative projects, and interesting
+                        collaborations.
                     </p>
-                    
+
                     <div class="contact-methods">
                         <div class="contact-method">
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <span>Email</span>
-                                <a href="mailto:shubhamlohan99@gmail.com">shubhamlohan99@gmail.com</a>
+                                <a href="mailto:shubhamlohan99@gmail.com">shubhamlohan99[at]gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-method">
@@ -371,7 +398,7 @@
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
 
                 <div class="social-links glass-card animate__animated animate__fadeInRight">
                     <h3>Follow Me</h3>
@@ -394,99 +421,20 @@
                         </a>
                     </div>
                 </div>
-                </div>
-                </div>
-                </section>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Shubham Lohan. Crafted with <i class="fas fa-heart"></i> and iOS design inspiration.</p>
+                <p>&copy; 2025 <a href="https://github.com/shubham-lohan" target="_blank">Shubham Lohan</a>. Crafted
+                    with <i class="fas fa-heart"></i></p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script>
-                // Typed.js initialization
-        var typed = new Typed("#typed", {
-            strings: ['IIITD\'23', 'Programmer', 'Engineer', 'ML Enthusiast', 'Problem Solver', 'Software Developer'],
-            typeSpeed: 100,
-            smartBackspace: true,
-            backSpeed: 50,
-            loop: true,
-            showCursor: true,
-            cursorChar: '|'
-        });
-
-                // Mobile menu toggle
-                const hamburger = document.querySelector('.hamburger');
-                const navMenu = document.querySelector('.nav-menu');
-
-                hamburger.addEventListener('click', () => {
-                    hamburger.classList.toggle('active');
-                    navMenu.classList.toggle('active');
-                });
-
-                // Close menu when link is clicked
-                document.querySelectorAll('.nav-menu a').forEach(n => n.addEventListener('click', () => {
-                    hamburger.classList.remove('active');
-                    navMenu.classList.remove('active');
-                }));
-
-                // Smooth scrolling
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        const target = document.querySelector(this.getAttribute('href'));
-                        if (target) {
-                            target.scrollIntoView({
-                                behavior: 'smooth',
-                                block: 'start'
-                            });
-                        }
-                    });
-                });
-
-                // Scroll animations
-                const observerOptions = {
-                    threshold: 0.1,
-                    rootMargin: '0px 0px -50px 0px'
-                };
-
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.style.opacity = '1';
-                            entry.target.style.transform = 'translateY(0)';
-                        }
-                    });
-                }, observerOptions);
-
-                // Observe all glass cards
-                document.querySelectorAll('.glass-card').forEach(card => {
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(30px)';
-                    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                    observer.observe(card);
-                });
-
-                // Parallax effect for hero background
-                window.addEventListener('scroll', () => {
-                    const scrolled = window.pageYOffset;
-                    const hero = document.querySelector('.hero-bg');
-                    if (hero) {
-                        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-                    }
-        });
-    </script>
-<!-- WOW.js for animations -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
 </body>
 
 </html>

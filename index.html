@@ -1,231 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="theme-color" content="#007AFF">
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="description" content="Shubham Lohan Portfolio - iOS Glass UI">
-    <meta name="keywords" content="HTML, CSS, C++, ML Enthusiastic, Problem Solver">
-    <meta name="author" content="Shubham Lohan">
-    <link rel="shortcut icon" href="assets/img/aboutme.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="https://kit.fontawesome.com/4019246ab4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
-    <title>Shubham Lohan | Portfolio</title>
-
-    <!-- Open Graph (OG) Tags -->
-    <meta property="og:title" content="Shubham Lohan | Portfolio">
-    <meta property="og:description" content="Shubham Lohan's portfolio showcasing his skills.">
-    <meta property="og:image" content="assets/img/me.png">
-    <meta property="og:url" content="https://shubham-lohan.github.io/">
-    <meta property="og:type" content="website">
+    <title>Shubham Lohan | Backend Engineer</title>
+    <meta name="description"
+        content="Backend Engineer specializing in scalable systems, distributed architectures, and high-performance APIs.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- 3D Libraries -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
 </head>
-
 <body>
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
     <!-- Navigation -->
-    <nav class="glass-nav">
-        <div class="nav-container">
-            <div class="nav-brand">Shubham Lohan</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="terminal-prompt">></span> shubham_lohan<span class="cursor">_</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">~/home</a></li>
+            <li><a href="#about" class="nav-link">~/about</a></li>
+            <li><a href="#experience" class="nav-link">~/experience</a></li>
+            <li><a href="#projects" class="nav-link">~/projects</a></li>
+            <li><a href="#contact" class="nav-link">~/contact</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+            <i data-lucide="menu"></i>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-            <div class="profile-card glass-card animate__animated animate__fadeInUp">
-                <div class="profile-image">
-                    <img src="assets/img/me.png" alt="Shubham Lohan">
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="role-badge">
+                    <span class="status-dot"></span> System Online
                 </div>
-                <h1>Shubham Lohan</h1>
-                <div class="typing-text">
-                    <span id="typed"></span>
-                </div>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn-primary glass-btn">Get In Touch</a>
-                    <a href="https://drive.google.com/file/d/1ZM1WGwJU33mRruynGW7d6KsspI-Z2z99/view?usp=sharing"
-                        target="_blank" class="btn-secondary glass-btn">
-                        <i class="fas fa-download"></i> Resume
+                <h1 class="glitch-text" data-text="Shubham Lohan">Shubham Lohan</h1>
+                <h2 class="subtitle">Backend Engineer</h2>
+                <p class="hero-desc">
+                    Building scalable distributed systems, optimizing data pipelines, and architecting robust backend solutions.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i data-lucide="terminal"></i> View Deployments
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i data-lucide="network"></i> Connect
                     </a>
                 </div>
             </div>
+            <div class="hero-visual">
+                <!-- Placeholder for 3D Element or Spline Scene -->
+                <div class="server-rack-visual">
+                    <!-- 3D Element Removed -->
+                </div>
+            </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
+
     </section>
+
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-card glass-card animate__animated animate__fadeInLeft"
-                style="width: 100%; max-width: none;">
-                <div class="card-header">
-                    <img src="assets/img/aboutme.png" alt="About Me" class="card-icon">
-                    <h3>Who Am I</h3>
-                </div>
-                <p>Software Development Engineer with 2 years of experience in building and scaling backend systems at
-                    fast-paced startups like Blinkit and Urban Company. Skilled in Java, Spring Boot, Node.js,
-                    TypeScript, MySQL, and MongoDB, with a strong foundation in data structures, algorithms, and system
-                    design. Experienced in developing high-impact features such as product integrity systems, catalog
-                    dashboards, and job optimization algorithms. Recognized for adaptability, problem-solving, and
-                    delivering robust solutions in dynamic environments.
-                </p>
+            <div class="section-header">
+                <h2 class="section-title"><span class="hash">#</span> System Specs</h2>
             </div>
-
-            <!-- Experience Timeline -->
-            <div class="experience-timeline glass-card animate__animated animate__fadeInUp">
-                <div class="card-header">
-                    <i class="fas fa-briefcase"></i>
-                    <h3>Experience Timeline</h3>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <p class="timeline-company">Blinkit (Eternal)</p>
-                                <div class="timeline-date">Mar 2025 - Present</div>
-                            </div>
-                            <h4>Software Developer Engineer - 1</h4>
-                            <div class="timeline-tech">
-                                <span class="tech-tag">Java</span>
-                                <span class="tech-tag">SpringBoot</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Kubernetes</span>
-                            </div>
+            <div class="about-grid">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-red"></span>
+                            <span class="btn-yellow"></span>
+                            <span class="btn-green"></span>
                         </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <p class="timeline-company">Urban Company</p>
-                                <div class="timeline-date">July 2023 - Feb 2025</div>
-                            </div>
-                            <h4>Software Developer Engineer - 1</h4>
-                            <div class="timeline-tech">
-                                <span class="tech-tag">TypeScript</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MySQL</span>
-                                <span class="tech-tag">MongoDB</span>
-                            </div>
+                        <div class="terminal-title">user@shubham:~/about</div>
                         </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">➜</span> <span class="cmd">cat profile.json</span></p>
+                        <pre class="code-block">{
+  "name": "Shubham Lohan",
+  "role": "Backend Engineer",
+  "experience": "2+ Years",
+  "location": "Delhi, India",
+  "core_focus": [
+    "Distributed Systems",
+    "Microservices",
+    "High Scalability"
+  ]
+}</pre>
+                        <p><span class="prompt">➜</span> <span class="cmd">whoami</span></p>
+                        <p class="output">
+                            Software Development Engineer with experience in building and scaling backend systems at fast-paced startups
+                            like Blinkit and Urban Company. Skilled in Java, Spring Boot, Node.js.
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <!-- Programming Languages -->
-                <div class="skill-category glass-card animate__animated animate__fadeInUp">
-                    <div class="category-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Programming</h3>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C">
-                            <span>C</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++">
-                            <span>C++</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java">
+                <div class="skills-cluster">
+                    <!-- Skills will be injected here or hardcoded -->
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
                             <span>Java</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/color/48/000000/typescript.png" alt="TypeScript">
+                            <span>C++</span>
+                            <span>Python</span>
                             <span>TypeScript</span>
+                            <span>SQL</span>
                         </div>
                     </div>
-                </div>
-
-                <!-- Web Technologies -->
-                <div class="skill-category glass-card animate__animated animate__fadeInUp">
-                    <div class="category-header">
-                        <i class="fas fa-globe"></i>
-                        <h3>Web Technologies</h3>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML">
-                            <span>HTML</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
-                            <span>CSS</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/fluent/48/000000/mysql-logo.png" alt="MySQL">
-                            <span>MySQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/color/48/000000/django.png" alt="Django">
+                    <div class="skill-category">
+                        <h3>Frameworks</h3>
+                        <div class="skill-tags">
+                            <span>Spring Boot</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
                             <span>Django</span>
                         </div>
                     </div>
-                </div>
-
-                <!-- Tools -->
-                <div class="skill-category glass-card animate__animated animate__fadeInUp">
-                    <div class="category-header">
-                        <i class="fas fa-tools"></i>
-                        <h3>Tools & IDEs</h3>
+                    <div class="skill-category">
+                        <h3>Infrastructure</h3>
+                        <div class="skill-tags">
+                            <span>Kubernetes</span>
+                            <span>Docker</span>
+                            <span>AWS</span>
+                            <span>MySQL</span>
+                            <span>MongoDB</span>
+                            <span>Redis</span>
+                        </div>
                     </div>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git">
-                            <span>Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="hash">#</span> Runtime Logs</h2>
+            </div>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content card">
+                        <div class="timeline-date">Mar 2025 - Present</div>
+                        <div class="company-header">
+                            <img src="https://logo.clearbit.com/blinkit.com" alt="Blinkit Logo" class="company-logo">
+                            <h3 class="company">Blinkit (Eternal)</h3>
                         </div>
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub">
-                            <span>GitHub</span>
+                        <h4 class="role">Software Developer Engineer - 1</h4>
+                        <p class="description">
+                            Working on high-scale logistics and quick-commerce backend systems.
+                        </p>
+                        <div class="tech-stack-mini">
+                            <span>Java</span>
+                            <span>SpringBoot</span>
+                            <span>PostgreSQL</span>
+                            <span>K8s</span>
                         </div>
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png"
-                                alt="VS Code">
-                            <span>VS Code</span>
+                    </div>
+                    </div>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content card">
+                        <div class="timeline-date">July 2023 - Feb 2025</div>
+                        <div class="company-header">
+                            <img src="https://logo.clearbit.com/urbancompany.com" alt="Urban Company Logo" class="company-logo">
+                            <h3 class="company">Urban Company</h3>
                         </div>
-                        <div class="skill-item">
-                            <img src="https://img.icons8.com/color/48/000000/intellij-idea.png" alt="IntelliJ">
-                            <span>IntelliJ</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="assets/img/icon_CLion.svg" alt="CLion">
-                            <span>CLion</span>
+                        <h4 class="role">Software Developer Engineer - 1</h4>
+                        <p class="description">
+                            Developed product integrity systems and catalog dashboards. Optimized job allocation algorithms.
+                        </p>
+                        <div class="tech-stack-mini">
+                            <span>Node.js</span>
+                            <span>TypeScript</span>
+                            <span>MySQL</span>
+                            <span>MongoDB</span>
                         </div>
                     </div>
                 </div>
@@ -234,207 +200,110 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card glass-card animate__animated animate__fadeInUp">
-                    <div class="project-image">
-                        <img src="assets/img/claim.png" alt="Claps Portal">
-                        <div class="project-overlay">
-                            <a href="http://claps.iiitd.edu.in/" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Claps Portal</h3>
-                        <p>B.Tech Project - Workflow system to manage Institute claim transactions online with Django
-                            backend.</p>
-                        <div class="project-tags">
-                            <span class="tag">Django</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card glass-card animate__animated animate__fadeInUp">
-                    <div class="project-image">
-                        <img src="assets/img/leetcode.png" alt="LeetCode Visualizer">
-                        <div class="project-overlay">
-                            <a href="http://leetcode-visualizer.herokuapp.com/" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>LeetCode Visualizer</h3>
-                        <p>Interactive visualization of LeetCode stats with contest ranking and profile comparison
-                            features.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Charts.js</span>
-                            <span class="tag">API</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card glass-card animate__animated animate__fadeInUp">
-                    <div class="project-image">
-                        <img src="assets/img/election.png" alt="Election Portal">
-                        <div class="project-overlay">
-                            <a href="https://github.com/shubham-lohan/online_election_portal" target="_blank"
-                                class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Online Election Portal</h3>
-                        <p>Secure online voting platform for mini-world elections with real-time results.</p>
-                        <div class="project-tags">
-                            <span class="tag">Web Dev</span>
-                            <span class="tag">Security</span>
-                            <span class="tag">Database</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card glass-card animate__animated animate__fadeInUp">
-                    <div class="project-image">
-                        <img src="assets/img/colorswitch.png" alt="Color Switch">
-                        <div class="project-overlay">
-                            <a href="https://github.com/shubham-lohan/Color-Switch" target="_blank"
-                                class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Color Switch Game</h3>
-                        <p>GUI implementation of popular Color Switch game using JavaFX with smooth animations.</p>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">JavaFX</span>
-                            <span class="tag">Game Dev</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card glass-card animate__animated animate__fadeInUp">
-                    <div class="project-image">
-                        <img src="assets/img/linuxshell.jpg" alt="Linux Shell">
-                        <div class="project-overlay">
-                            <a href="https://github.com/shubham-lohan/Basic-Linux-Shell" target="_blank"
-                                class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Linux Shell</h3>
-                        <p>Custom implementation of basic Linux shell functionality with command parsing and execution.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">C</span>
-                            <span class="tag">Linux</span>
-                            <span class="tag">System Programming</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card glass-card animate__animated animate__fadeInUp">
-                    <div class="project-image">
-                        <img src="assets/img/mafia.jpeg" alt="Mafia Game">
-                        <div class="project-overlay">
-                            <a href="https://github.com/shubham-lohan/Mafia-Game" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Mafia Game</h3>
-                        <p>Terminal-based multiplayer Mafia game with role assignment and voting mechanics.</p>
-                        <div class="project-tags">
-                            <span class="tag">C++</span>
-                            <span class="tag">Game Logic</span>
-                            <span class="tag">Terminal UI</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title"><span class="hash">#</span> Deployed Services</h2>
             </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card card">
+                    <img src="assets/img/election.png" alt="Election Portal" class="project-bg-img">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <i data-lucide="folder"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/shubham-lohan/online_election_portal" target="_blank"><i
+                                    data-lucide="github"></i></a>
+                            <!-- <a href="#" target="_blank"><i data-lucide="external-link"></i></a> -->
+                        </div>
+                    </div>
+                    <h3 class="project-title">Online Election Portal</h3>
+                    <p class="project-desc">Secure online voting platform with real-time results processing and integrity checks.</p>
+                    <div class="project-tech">
+                        <span>Web Security</span>
+                        <span>Database</span>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card card">
+                    <img src="assets/img/leetcode.png" alt="LeetCode Visualizer" class="project-bg-img">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <i data-lucide="bar-chart-2"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/shubham-lohan/leetcode-visualiser" target="_blank"><i
+                                    data-lucide="github"></i></a>
+                            <!-- <a href="#" target="_blank"><i data-lucide="external-link"></i></a> -->
+                        </div>
+                    </div>
+                    <h3 class="project-title">LeetCode Visualizer</h3>
+                    <p class="project-desc">Interactive visualization of coding stats with contest ranking analysis.</p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>API Integration</span>
+                        <span>Chart.js</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card card">
+                    <img src="assets/img/linuxshell.jpg" alt="Linux Shell" class="project-bg-img">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <i data-lucide="terminal"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/shubham-lohan/Basic-Linux-Shell" target="_blank"><i
+                                    data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Custom Linux Shell</h3>
+                    <p class="project-desc">Implementation of a basic shell with command parsing, piping, and process management.</p>
+                    <div class="project-tech">
+                        <span>C</span>
+                        <span>System Calls</span>
+                        <span>Linux</span>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-grid">
-                <div class="contact-info glass-card animate__animated animate__fadeInLeft">
-                    <h3>Get In Touch</h3>
-                    <p>I'm always open to discussing new opportunities, innovative projects, and interesting
-                        collaborations.
-                    </p>
-
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <span>Email</span>
-                                <a href="mailto:shubhamlohan99@gmail.com">shubhamlohan99[at]gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <span>Location</span>
-                                <p>Delhi, India</p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <span>Education</span>
-                                <p>IIIT Delhi - CSAM '23</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="social-links glass-card animate__animated animate__fadeInRight">
-                    <h3>Follow Me</h3>
-                    <div class="social-grid">
-                        <a href="https://github.com/shubham-lohan" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/shubham-lohan" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin-in"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://twitter.com/shubham_lohan_" target="_blank" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                            <span>Twitter</span>
-                        </a>
-                        <a href="https://t.me/shubham_lohan" target="_blank" class="social-link">
-                            <i class="fab fa-telegram"></i>
-                            <span>Telegram</span>
-                        </a>
-                    </div>
+    <section id="contact" class="section">
+        <div class="container contact-container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="hash">#</span> Open Connection</h2>
+            </div>
+            <div class="contact-content card">
+                <p>I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to
+                    get back to you!</p>
+                <a href="mailto:shubhamlohan99@gmail.com" class="btn btn-primary big-btn">
+                    <i data-lucide="mail"></i> shubhamlohan99[at]gmail.com
+                </a>
+                <div class="social-links-row">
+                    <a href="https://github.com/shubham-lohan" target="_blank" class="social-icon"><i data-lucide="github"></i></a>
+                    <a href="https://www.linkedin.com/in/shubham-lohan" target="_blank" class="social-icon"><i
+                            data-lucide="linkedin"></i></a>
+                    <a href="https://twitter.com/shubham_lohan_" target="_blank" class="social-icon"><i data-lucide="twitter"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 <a href="https://github.com/shubham-lohan" target="_blank">Shubham Lohan</a>. Crafted
-                    with <i class="fas fa-heart"></i></p>
-            </div>
+            <p>Designed & Built by Shubham Lohan. <span class="version">v2.0.0</span></p>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/three-bg.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
-
 </html>
